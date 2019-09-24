@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Reservation {
 
     //data for seats
-    private char[][] seats = {
+    private static char[][] seats = {
             {'X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X'},
             {'X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X'},
             {'X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X'},
