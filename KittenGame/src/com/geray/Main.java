@@ -14,7 +14,7 @@ public class Main {
 
         Prompt prompt = new Prompt();
 
-        System.out.println("Your door rings and you see a gift in front the door...");
+        System.out.println(arts.getGIFT_TITLE());
         System.out.println("You are about the open it!");
         prompt.promptEnterKey();
 
@@ -24,8 +24,6 @@ public class Main {
         System.out.println(arts.getSLEEPINGCAT());
         System.out.println("There is a little Cat!");
         prompt.promptEnterKey();
-
-
 
 
         // The part if you are sure about your cat's name
@@ -38,11 +36,23 @@ public class Main {
 
             if (decide.toUpperCase().equals("NO")) {
             }
-             if(decide.toUpperCase().equals("YES"))
-                break;
-            else
-                System.out.println("Type Yes or No...");
+             if(decide.toUpperCase().equals("YES")) {
+                 catInfo.setName(name);
+                 break;
+             }
+            else {
+                 System.out.println("Type Yes or No...");
+             }
         }
+
+        System.out.println(arts.getTHECAT());
+        System.out.println(catInfo.getName().toUpperCase() + " went to the balcony!");
+        prompt.promptEnterKey();
+
+        System.out.println(arts.getJUMPCAT());
+        prompt.promptEnterKey();
+
+        System.out.println(arts.getNOLONGER());
 
 
     }
